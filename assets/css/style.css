@@ -22,6 +22,8 @@ body {
 
   
   .question-area {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -41,41 +43,47 @@ body {
   }
   
   .answers {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     margin-bottom: 5px;
-    cursor: pointer;
   }
 
-  
+  .answers label:not(:first-child) {
+    border-top: 1px solid #e0e0e0;
+  }
+
   .answer {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 10px;
     cursor: pointer;
   }
   
   .answer input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 10px;
   }
   
-  button {
+  .submit-btn {
+    display: block;
+    margin: 50px auto;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
+    font-size: 1.2rem;
+    background-color: #00c306;
+    color: fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #00ff0d;
   }
   
-  #score {
-    font-size: 18px;
+  .score {
     font-weight: bold;
+    font-size: 1.4rem;
     margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: #7e8c7f;
+    border-radius: 5px;
+    text-align: center;
   }
