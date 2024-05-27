@@ -1,17 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-size: 1rem;
+    background-color: #afeab2;
+    
     margin: 0;
     padding: 0;
   }
   
-  .game-area {
+  .quiz-area {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
   }
+
+  h1 {
+    text-align: center;
+  }
+
   
   .question-area {
     background-color: white;
@@ -21,17 +29,25 @@ body {
     margin-bottom: 20px;
   }
   
+  
   .question {
-    font-size: 18px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+  }
+
+  question p {
     font-weight: bold;
-    margin-bottom: 10px;
   }
   
   .answers {
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-bottom: 5px;
+    cursor: pointer;
   }
+
   
   .answer {
     display: flex;
