@@ -1,101 +1,142 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #7caf5e;
+}
+
+/* General styles */
+
 body {
-    font-family: helvetica, sans-serif;
-    font-size: 0.8125rem;
-    background-color: #afeab2;
-    margin: 0;
-    padding: 0 10px;
-  }
+  min-height: 100vh;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 
-  p {
-    letter-spacing: 2px;
-  }
-  
-  .quiz-area {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  /* Generic project styles */
+  font-family: helvetica, sans-serif;
+  font-size: 0.8125rem;
+  background-color: #afeab2;
+  color: #212121;
+}
 
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+/* Hero section */
+#hero {
+  height: 450px;
+  width: 100%;
+  background: url("../images/diving-down-home.jpg") no-repeat center center/cover;
+  background-color: #03a22b;
+}
 
-  
-  .question-area {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  
-  .question {
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 20px;
-  }
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 550;
+  font-size: 3.3rem;
+  letter-spacing: 1.5px;
+  color: #bd5001;
+  margin-bottom: 5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  padding-top: 180px;
+}
 
-  question p {
-    font-weight: bold;
-  }
-  
-  .answers {
-    margin-bottom: 5px;
-  }
+p {
+  letter-spacing: 2px;
+}
 
-  .answers label:not(:first-child) {
-    border-top: 1px solid #e0e0e0;
-  }
+.quiz-area {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .answer {
-    padding: 10px 0;
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .answer input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  .submit-btn {
-    display: block;
-    margin: 50px auto;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #00c306;
-    color: fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #00ff0d;
-  }
-  
-  .score {
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 10px;
-    background: #7e8c7f;
-    border-radius: 5px;
-    text-align: center;
-  }
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 
+.question-area {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
 
-  /* Media query: tablets and larger (768px and up) */
+
+.question {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+question p {
+  font-weight: bold;
+}
+
+.answers {
+  margin-bottom: 5px;
+}
+
+.answers label:not(:first-child) {
+  border-top: 1px solid #e0e0e0;
+}
+
+.answer {
+  padding: 10px 0;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.answer input[type="radio"] {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 50px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #00c306;
+  color: fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00ff0d;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+  background: #7e8c7f;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
   .quiz-area {
@@ -103,6 +144,67 @@ body {
   }
 
 }
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #54a094;
+  color: #212121;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+/* Style footer logo */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  color: #212121;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-logo span {
+  margin: 0;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Style Footer social media icons */
+.social-media {
+  flex: 1;
+}
+
+#social-networks {
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1.5rem;
+  color: #212121;
+  margin-right: 15px;
+}
+
+.social-media li {
+  display: inline-flex;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.social-media a {
+  color: #212121;
+}
+
 
 /* Media query: wider screens (1440px and up) */
 @media screen and (min-width: 1440px) {

@@ -4,271 +4,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Meta tags for search engines -->
+    <meta name="description"
+        content="Irish tree trivia quiz. A fun quiz to test Irish tree trivia, also provides some information about trees in Ireland.">
+    <meta name="keywords" content="tree, trees, forest, native, quiz, test, trivia, multiple choice">
+
+    <!-- Title -->
     <title>Tree Trivia</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <div class="quiz-area">
-        <h1>Test your Irish Tree Trivia!</h1>
-        <p>"Around 12,000 years ago, Ireland was covered in snow and ice. This was known as the Ice Age. As the weather
-            became warmer, the snow and ice melted and trees began to grow. The seeds of trees such as hazel and oak
-            were brought here by birds and animals, across the landbridges from Britain and the rest of Europe. The
-            seeds of other trees, such as willow and birch, are so light that they were blown here by the wind."
-            "Eventually, the seas rose, the landbridges were flooded and Ireland became an island. Our native trees are
-            the trees that reached here before we were separated from the rest of Europe. Our most common native trees
-            include oak, ash, hazel, birch, Scots pine, rowan and willow. Eventually, people brought other trees, such
-            as beech, sycamore, horse chestnut, spruce, larch and fir to Ireland." - Irish Tree Council
-        </p>
-        <p>
-            Despite its green image, Ireland has surprisingly little forest. Across Europe, nations average around 35%
-            forest cover but in Ireland the figure is just 11%, one of the lowest on the continent.
-            This hasn't always been the case. Thousands of years ago, more than 80% of the island of Ireland was covered
-            in trees. Over many centuries they were then almost entirely chopped down to make way for fields and pasture
-            and by 1925, only 1% was forested. The only trees that remained were on land that was unsuitable for any
-            type of agriculture.
-            For a number of decades the government has paid farmers and other private landowners to plant trees on their
-            land in place of intensive agriculture. But these grants have so far fallen short of reaching their target
-            of 18% forest cover.
 
-            Until recently forestry was considered valuable only as a supply of timber to be harvested. This explains
-            why, of that 11% of the Republic of Ireland that is forested, the vast majority (9% of the country) is
-            planted with spruces like the Sitka spruce, a fast growing conifer originally from Alaska which can be
-            harvested after just 15 years.
-        </p>
-        <hr>
-        <form id="quiz-form">
-            <div class="question-area">
+    <!-- Main content -->
+    <main>
+        <div id="hero">
+            <h1 class="hero-title">Test your Irish Tree Trivia!</h1>
+        </div>
+        <div class="quiz-area">
+            <p>"Around 12,000 years ago, Ireland was covered in snow and ice. This was known as the Ice Age. As the
+                weather
+                became warmer, the snow and ice melted and trees began to grow. The seeds of trees such as hazel and oak
+                were brought here by birds and animals, across the landbridges from Britain and the rest of Europe. The
+                seeds of other trees, such as willow and birch, are so light that they were blown here by the wind."
+                "Eventually, the seas rose, the landbridges were flooded and Ireland became an island. Our native trees
+                are
+                the trees that reached here before we were separated from the rest of Europe. Our most common native
+                trees
+                include oak, ash, hazel, birch, Scots pine, rowan and willow. Eventually, people brought other trees,
+                such
+                as beech, sycamore, horse chestnut, spruce, larch and fir to Ireland." - Irish Tree Council
+            </p>
+            <p>
+                Despite its green image, Ireland has surprisingly little forest. Across Europe, nations average around
+                35%
+                forest cover but in Ireland the figure is just 11%, one of the lowest on the continent.
+                This hasn't always been the case. Thousands of years ago, more than 80% of the island of Ireland was
+                covered
+                in trees. Over many centuries they were then almost entirely chopped down to make way for fields and
+                pasture
+                and by 1925, only 1% was forested. The only trees that remained were on land that was unsuitable for any
+                type of agriculture.
+                For a number of decades the government has paid farmers and other private landowners to plant trees on
+                their
+                land in place of intensive agriculture. But these grants have so far fallen short of reaching their
+                target
+                of 18% forest cover.
 
-                <div class="question">
-                    <p>1. How much of Ireland is covered with native forest?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q1" value="a">
-                            A. 2%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q1" value="b">
-                            B. 11%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q1" value="c">
-                            C. 27%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q1" value="d">
-                            D. 33%
-                        </label>
+                Until recently forestry was considered valuable only as a supply of timber to be harvested. This
+                explains
+                why, of that 11% of the Republic of Ireland that is forested, the vast majority (9% of the country) is
+                planted with spruces like the Sitka spruce, a fast growing conifer originally from Alaska which can be
+                harvested after just 15 years.
+            </p>
+            <hr>
+            <form id="quiz-form">
+                <div class="question-area">
+
+                    <div class="question">
+                        <img src="question1.jpg" alt="Question 1 Image">
+                        <p>1. How much of Ireland is covered with native forest?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q1" value="a">
+                                A. 2%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q1" value="b">
+                                B. 11%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q1" value="c">
+                                C. 27%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q1" value="d">
+                                D. 33%
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>2. What does the Latin word 'arboretum' mean?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q2" value="a">
-                            A. Group of trees near water
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q2" value="b">
-                            B. Ancient field
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q2" value="c">
-                            C. Woodland glade
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q2" value="d">
-                            D. Place with trees
-                        </label>
+                    <div class="question">
+                        <p>2. What does the Latin word 'arboretum' mean?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q2" value="a">
+                                A. Group of trees near water
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q2" value="b">
+                                B. Ancient field
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q2" value="c">
+                                C. Woodland glade
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q2" value="d">
+                                D. Place with trees
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>3. Which of the following trees does NOT produce nuts?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q3" value="a">
-                            A. Hazel
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q3" value="b">
-                            B. Oak
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q3" value="c">
-                            C. Juniper
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q3" value="d">
-                            D. Hickory
-                        </label>
+                    <div class="question">
+                        <p>3. Which of the following trees does NOT produce nuts?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q3" value="a">
+                                A. Hazel
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q3" value="b">
+                                B. Oak
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q3" value="c">
+                                C. Juniper
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q3" value="d">
+                                D. Hickory
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>4. What tree has earned the nickname 'tree of the dead'?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q4" value="a">
-                            A. Hawthorn (Crataegus monogyna)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q4" value="b">
-                            B. Yew (Taxus baccata)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q4" value="c">
-                            C. Wych Elm (Ulmus glabra)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q4" value="d">
-                            D. Silver birch (Betula pendula)
-                        </label>
+                    <div class="question">
+                        <p>4. What tree has earned the nickname 'tree of the dead'?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q4" value="a">
+                                A. Hawthorn (Crataegus monogyna)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q4" value="b">
+                                B. Yew (Taxus baccata)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q4" value="c">
+                                C. Wych Elm (Ulmus glabra)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q4" value="d">
+                                D. Silver birch (Betula pendula)
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>5. What is the national tree of Ireland?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q5" value="a">
-                            A. Sessile Oak (Quercus petraea)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q5" value="b">
-                            B. Holly (Ilex aquifolium)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q5" value="c">
-                            C. Whitethorn / Hawthorn (Crataegus)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q5" value="d">
-                            D. Mountain Ash / Rowan (Sorbus aucuparia)
-                        </label>
+                    <div class="question">
+                        <p>5. What is the national tree of Ireland?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q5" value="a">
+                                A. Sessile Oak (Quercus petraea)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q5" value="b">
+                                B. Holly (Ilex aquifolium)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q5" value="c">
+                                C. Whitethorn / Hawthorn (Crataegus)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q5" value="d">
+                                D. Mountain Ash / Rowan (Sorbus aucuparia)
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>6. The tallest tree in Ireland is a Douglas fir at the Powerscourt Estate in Co. Wicklow, but how
-                        tall is tthis tree?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q6" value="a">
-                            A. 56 meter
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q6" value="b">
-                            B. 43 meter
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q6" value="c">
-                            C. 31 meter
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q6" value="d">
-                            D. 64 meter
-                        </label>
+                    <div class="question">
+                        <p>6. The tallest tree in Ireland is a Douglas fir at the Powerscourt Estate in Co. Wicklow, but
+                            how
+                            tall is tthis tree?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q6" value="a">
+                                A. 56 meter
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q6" value="b">
+                                B. 43 meter
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q6" value="c">
+                                C. 31 meter
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q6" value="d">
+                                D. 64 meter
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>7. How much of Ireland was once upon a time covered with forest?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q7" value="a">
-                            A. 50%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q7" value="b">
-                            B. 60%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q7" value="c">
-                            C. 70%
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q7" value="d">
-                            D. 80%
-                        </label>
+                    <div class="question">
+                        <p>7. How much of Ireland was once upon a time covered with forest?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q7" value="a">
+                                A. 50%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q7" value="b">
+                                B. 60%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q7" value="c">
+                                C. 70%
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q7" value="d">
+                                D. 80%
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>8. Which of the following trees is not a native Irish tree?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q8" value="a">
-                            A. Scots Pine (Pinus sylvestris)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q8" value="b">
-                            B. Weeping Golden Willow (Salix × sepulcralis 'Chrysocoma')
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q8" value="c">
-                            C. Guelder Rose (Viburnum opulus)
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q8" value="d">
-                            D. Horse Chestnut (Aesculus hippocastanum)
-                        </label>
+                    <div class="question">
+                        <p>8. Which of the following trees is not a native Irish tree?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q8" value="a">
+                                A. Scots Pine (Pinus sylvestris)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q8" value="b">
+                                B. Weeping Golden Willow (Salix × sepulcralis 'Chrysocoma')
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q8" value="c">
+                                C. Guelder Rose (Viburnum opulus)
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q8" value="d">
+                                D. Horse Chestnut (Aesculus hippocastanum)
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>9. Most timber can float in water, but which of the following will sink?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q9" value="a">
-                            A. Whitebean
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q9" value="b">
-                            B. Ebony
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q9" value="c">
-                            C. Spindle
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q9" value="d">
-                            D. Arbutus
-                        </label>
+                    <div class="question">
+                        <p>9. Most timber can float in water, but which of the following will sink?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q9" value="a">
+                                A. Whitebean
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q9" value="b">
+                                B. Ebony
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q9" value="c">
+                                C. Spindle
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q9" value="d">
+                                D. Arbutus
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="question">
-                    <p>10. Ireland has 3 native conifers, which one below is not one of them?</p>
-                    <div class="answers">
-                        <label class="answer">
-                            <input type="radio" name="q10" value="a">
-                            A. Juniper
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q10" value="b">
-                            B. Yew
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q10" value="c">
-                            C. Larch
-                        </label>
-                        <label class="answer">
-                            <input type="radio" name="q10" value="d">
-                            D. Scots Pine
-                        </label>
+                    <div class="question">
+                        <p>10. Ireland has 3 native conifers, which one below is not one of them?</p>
+                        <div class="answers">
+                            <label class="answer">
+                                <input type="radio" name="q10" value="a">
+                                A. Juniper
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q10" value="b">
+                                B. Yew
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q10" value="c">
+                                C. Larch
+                            </label>
+                            <label class="answer">
+                                <input type="radio" name="q10" value="d">
+                                D. Scots Pine
+                            </label>
+                        </div>
                     </div>
+
+
                 </div>
+                <button type="submit" class="submit-btn">Let's find out how you did!</button>
+            </form>
+            <div class="score" id="score"></div>
+        </div>
 
+        <script src="assets/js/script.js"></script>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <p>
+                <a href="index.html" aria-label="Link back to homepage">
+                    <span>Tree</span>
+                    <span>Trivia</span>
+                </a>
+            </p>
+        </div>
+        <div class="social-media">
+            <ul id="social-networks">
+                <li>
+                    <a href="https://github.com/LemmenAid/tree-trivia" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub Repo (opens in a new tab)">
+                        <i class="fa-brands fa-square-github fa-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/karlanlemmen/" target="_blank" rel="noopener"
+                        aria-label="Visit my Instagram page (opens in a new tab)">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-            </div>
-            <button type="submit" class="submit-btn">Let's find out how you did!</button>
-        </form>
-        <div class="score" id="score"></div>
-    </div>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/4f09a0f356.js" crossorigin="anonymous"></script>
 
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
