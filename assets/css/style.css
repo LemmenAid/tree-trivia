@@ -106,14 +106,20 @@ h1 {
 }
 
 .answer {
-  padding: 10px 0;
+  padding: 10px 5px;
   display: block;
   margin-bottom: 10px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .answer input[type="radio"] {
-  margin-right: 10px;
+  margin-right: 5px;
+}
+
+#correct {
+  background-color: rgb(88, 193, 88);
+  color: #fff;
 }
 
 .submit-btn {

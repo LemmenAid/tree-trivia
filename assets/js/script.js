@@ -16,4 +16,6 @@ quizForm.addEventListener('submit', e => {
     });
 
     scoreDiv.innerHTML = `Your score is ${score} / ${correctAnswers.length}.`
+    showCorrectAnswers();
 });
+
